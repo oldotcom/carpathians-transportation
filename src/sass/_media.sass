@@ -1,0 +1,218 @@
+@media (max-width: 1200px)
+    .logo
+        width: 145px
+    .title
+        font-size: 35px
+    .main
+        min-height: 720px
+        padding: 105px 0 42px 0
+        &:after
+            height: 720px
+        &_header
+            font-size: 50px
+        &_btn
+            margin-top: 54px
+        &_text
+            p
+                font-size: 20px
+    .timetable
+        &_block
+            width: 100%
+        &_subtitle
+            font-size: 18px
+        &_price
+            font-size: 17px
+
+@media (max-width: 991px)
+    .menu
+        padding: 14px
+    .timetable
+        &_subtitle
+            font-size: 14px
+        &_price
+            font-size: 14px
+        &_text
+            width: 100%
+            p
+                font-size: 15px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: #000
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            margin: 10px 0
+        &_link
+            font-weight: 400
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            margin-bottom: 2px
+            width: 100%
+            height: 2px
+            background-color: #fff
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .logo
+        width: 130px
+    .title
+        font-size: 30px
+        &_indent
+            margin-top: 45px
+    .subtitle
+        width: 100%
+        margin: 20px auto
+    .main
+        padding: 75px 0 42px 0
+        &_header
+            margin-top: 35px
+            font-size: 45px
+        &_text
+            width: 100%
+            p
+                font-size: 18px
+        &_btn
+            &:hover
+                background-image: linear-gradient(0deg, #007bc2 0%, #4eabe0 100%)
+    .benefits
+        padding: 45px 0
+        &_block
+            margin-top: 35px
+    .timetable
+        padding: 45px 0
+    .transfer
+        min-height: 1870px
+        padding: 45px 0
+        &_table
+            th
+                font-size: 15px
+            td
+                font-size: 13px
+    .contacts
+        min-height: 380px
+        padding: 45px 0
+        &_wrapper
+            margin-top: 40px
+        &_item
+            width: 160px
+            &_descr
+                &_subtitle
+                    font-size: 18px
+                &_info
+                    font-size: 13px
+                    a
+                        font-size: 13px
+
+@media (max-width: 575px)
+    nav
+        height: 39px
+    .title
+        font-size: 20px
+    .subtitle
+        font-size: 18px
+        margin-bottom: 0
+    .menu
+        width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            padding: 4px 0
+        &_link
+            display: block
+    .main
+        min-height: 710px
+        padding-top: 55px
+        padding-bottom: 0px
+        &:after
+            height: 710px
+        &_header
+            font-size: 35px
+        &_text
+            margin-top: 45px
+            p
+                font-size: 16px
+        &_arrow
+            width: 20px
+            height: 20px
+    .hidden-320
+        display: none
+    .benefits
+        &_block
+            flex-direction: column
+            align-items: center
+            margin-top: 30px
+        &_icon
+            margin-right: 0
+        &_descr
+            width: 100%
+            margin-top: 14px
+        &_subtitle
+            text-align: center
+            font-size: 25px
+        &_text
+            text-align: center
+            font-size: 18px
+    .road
+        min-height: 250px
+    .timetable
+        &_subtitle
+            font-size: 11px
+        &_price
+            font-size: 12px
+        &_text
+            font-size: 13px
+    .transfer
+        min-height: 1675px
+        &_tblock
+            padding: 10px
+            margin-top: 20px
+        &_table
+            th
+                font-weight: 400
+                font-size: 12px
+            td
+                font-size: 14px
+    .mountain
+        min-height: 250px
+    .contacts
+        &_wrapper
+            flex-direction: column
+            align-items: center
+        &_item
+            width: 100%
+            margin-top: 20px
+            &_descr
+                &_subtitle
+                    font-size: 25px
+                &_info
+                    font-size: 18px
+                    a
+                        font-size: 20px
+                        font-weight: 400

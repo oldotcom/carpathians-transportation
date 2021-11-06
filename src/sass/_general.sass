@@ -1,0 +1,236 @@
+nav
+    position: fixed
+    width: 100%
+    height: 50px
+    background: #7b7d83
+    opacity: 85%
+    z-index: 4
+
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 14px 180px
+    margin: 0px
+    list-style-type: none
+    &_link
+        font-weight: 700
+        font-size: 14px
+        text-decoration: none
+        color: #fff
+        &:hover
+            text-decoration: none
+            color: #fff
+.logo
+    display: block
+    margin: 0 auto
+    width: 158px
+    height: 111px
+    
+.main
+    min-height: 934px
+    padding: 140px 0 42px 0
+    background: url('../img/bg/bg_main.jpg') center (center / cover) no-repeat fixed
+    &:after
+        content: ''
+        position: absolute
+        height: 934px
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba(0,0,0, .1)
+        z-index: 2
+    .inner
+        position: relative
+        z-index: 3
+    &_header
+        margin-top: 50px
+        font-weight: 700
+        font-size: 70px
+        text-align: center
+        text-transform: uppercase
+        color: #fff
+    &_btn
+        display: block
+        margin: 80px auto 0 auto
+        width: 172px
+        height: 46px
+        background-image: linear-gradient(0deg, #007bc2 0%, #4eabe0 100%)
+        border: none
+        border-radius: 4px
+        font-weight: 400
+        font-size: 14px
+        text-align: center
+        text-transform: uppercase
+        text-decoration: none
+        color: #FFFFFF
+        &:hover
+            background-image: none
+            background-color: #007bc2
+    &_text
+        width: 670px
+        margin: 0 auto
+        margin-top: 50px
+        p
+            font-weight: 300
+            font-size: 24px
+            text-align: center
+            color: #fff
+    &_arrow
+        position: relative
+        margin: auto
+        margin-top: 10px
+        width: 30px
+        height: 30px
+        cursor: pointer
+        &:before, &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            border-left: 2px solid #fff
+            border-bottom: 2px solid #fff
+            animation: main_arrow 3s linear infinite
+        &:after
+            animation: main_arrow 3s linear infinite -1.2s
+    @keyframes main_arrow
+        0%
+            opacity: 0
+            transform: translate(0, -20px) rotate(-45deg)
+        10%, 90%
+            opacity: 0
+        50%
+            opacity: 1
+            transform: translate(0, 0) rotate(-45deg)
+        100%
+            opacity: 0
+            transform: translate(0, 20px) rotate(-45deg)      
+            
+.title
+    font-weight: 700
+    font-size: 40px
+    text-align: center
+    color: black
+    &_indent
+        margin-top: 90px
+
+
+.subtitle
+    margin: 30px auto 46px auto
+    width: 488px
+    font-weight: 300
+    font-size: 23px
+    text-align: center
+    color: black
+
+.benefits
+    min-height: 800px
+    padding: 80px 0
+    &_block
+        display: flex
+        justify-content: center
+        margin-top: 54px
+    &_icon
+        width: 72px
+        height: 72px
+        margin-right: 22px
+    &_descr
+        width: 330px
+    &_subtitle
+        font-weight: 700
+        font-size: 20px
+        color: black
+
+.road
+    min-height: 380px
+    background: url('../img/bg/bg_road.jpg') center (center / cover) no-repeat fixed
+
+.timetable
+    min-height: 1107px
+    padding: 80px 0
+    &_block
+        margin: 0 auto
+        width: 560px
+        margin-top: 40px
+    &_header
+        display: flex
+        justify-content: space-between
+    &_subtitle
+        font-weight: 700
+        font-size: 20px
+        color: black
+        text-transform: uppercase
+    &_price
+        font-weight: 700
+        font-size: 18px
+        color: black
+    hr
+        margin: 3px 0
+    &_text
+        font-weight: 300
+        span
+                font-weight: 700
+
+.transfer
+    min-height: 2000px
+    padding: 80px 0
+    background-color: #eeeeee
+    &_tblock
+        max-width: 960px
+        margin: 0 auto
+        margin-top: 40px
+        padding: 40px
+        background: linear-gradient(0deg, #007bc2 0%, #4eabe0 100%)
+        border-radius: 8px
+    &_table
+        th
+            font-weight: 700
+            font-size: 20px
+            padding-bottom: 15px
+            text-align: center
+            color: #fff
+        td
+            font-weight: 300
+            border: 1px solid #fff
+            border-left: none
+            border-right: none
+            padding: 18px
+            text-align: center
+            color: #fff
+
+.mountain
+    min-height: 380px
+    background: url('../img/bg/bg_mountain.jpg') center (center / cover) no-repeat fixed
+
+.contacts
+    min-height: 500px
+    padding: 80px 0
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        margin-top: 70px
+        width: 100%
+    &_item
+        width: 290px
+        &_icon
+            margin: 0 auto
+            width: 54px
+            img
+                width: 100%
+        &_descr
+            margin-top: 25px
+            text-align: center
+            &_subtitle
+                font-weight: 700
+                font-size: 23px
+            &_info, a
+                margin-top: 13px
+                font-weight: 300
+                font-size: 17px
+                text-decoration: none
+                color: #000
+
+footer
+    min-height: 70px 
+    background: black
